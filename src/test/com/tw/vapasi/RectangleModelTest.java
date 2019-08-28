@@ -8,12 +8,24 @@ class RectangleModelTest
     void areaOfRectangleLength5Breadth2()
     {
         RectangleModel rectangleModel = new RectangleModel();
-        assertEquals(10, rectangleModel.Area(5,2));
+        assertEquals(10, rectangleModel.area(5,2));
     }
     @Test
     void areaOfRectangleLength52Breadth25()
     {
         RectangleModel rectangleModel = new RectangleModel();
-        assertEquals(1300, rectangleModel.Area(52,25));
+        assertEquals(1300, rectangleModel.area(52,25));
+    }
+    @Test
+    void areaOfRectangleLength0Breadth25()
+    {
+        RectangleModel rectangleModel = new RectangleModel();
+        assertEquals(0, rectangleModel.area(0,25));
+    }
+    @Test
+    void perimeterOfRectangleLength5Breadth2()
+    {
+        RectangleModel rectangleModel = new RectangleModel();
+        assertEquals(14, rectangleModel.perimeter(5,2));
     }
 }
