@@ -1,6 +1,6 @@
 package com.tw.vapasi;
 //Shape with  4 sides with 2 opposite sides equal to each other
- class Rectangle  implements IShape{
+ class Rectangle{
      private  double length;
      private double breadth;
 
@@ -9,16 +9,12 @@ package com.tw.vapasi;
          this.length = length;
          this.breadth = breadth;
      }
-
-    @Override
     public double area()
     {
         return  length * breadth;
     }
-
-    @Override
-   public double perimeter()
+    public double perimeter()
     {
-        return (2 * length)  + ( 2 * breadth);
+        return 2 * ( length + breadth );
     }
 }
